@@ -73,7 +73,7 @@ jobs:
       
       - name: Push Docker Image on ECR
         run: |
-          BUILT_DATE=$(date "+%Y%m%e")
+          BUILT_DATE=$(date "+%Y%m%d")
           SHORT_HASH=$(git rev-parse --short HEAD)
           IMAGE_TAG=${CKAN_VERSION}-${BUILT_DATE}-${SHORT_HASH}
           docker tag ${IMAGE_NAME} ${ECR_BASE}/${ECR_REPO}:${IMAGE_TAG}
