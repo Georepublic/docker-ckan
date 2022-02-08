@@ -17,7 +17,7 @@ jobs:
     env:
       IMAGE_NAME: ckan
       DOCKER_BUILDKIT: 1
-      S3_FILESTORE_VERSION: v1.0.0
+      S3_FILESTORE_VERSION: develop
 
     steps:
       - uses: actions/checkout@v2
