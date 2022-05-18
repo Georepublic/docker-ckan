@@ -38,6 +38,7 @@ services:
       RUN_INIT_DB: 1
       DATAPUSHER_CALLBACK_URL: http://ckan:5000
       CKAN_DATAPUSHER_URL: http://datapusher:8800
+      # REBUILD_SOLR_SEARCH_INDEX: 1
     ports:
       - 5000:5000
 

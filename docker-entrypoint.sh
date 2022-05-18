@@ -107,4 +107,8 @@ if [ ! -z "$RUN_INIT_DB" ]; then
   ckan --config "$CONFIG" db init
 fi
 
+if [ ! -z "$REBUILD_SOLR_SEARCH_INDEX" ]; then
+  ckan --config "$CONFIG" search-index rebuild
+fi
+
 exec "$@"
