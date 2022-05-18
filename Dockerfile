@@ -16,7 +16,7 @@ RUN pip install --user setuptools==45
 
 
 FROM build-base as ckan
-ARG CKAN_VERSION=2.9.4
+ARG CKAN_VERSION=2.9.5
 
 RUN pip install --user "git+https://github.com/ckan/ckan.git@ckan-${CKAN_VERSION}#egg=ckan[requirements]"
 
