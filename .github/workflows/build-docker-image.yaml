@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  CKAN_VERSION: 2.9.4
+  CKAN_VERSION: 2.9.5
 
 jobs:
   build:
